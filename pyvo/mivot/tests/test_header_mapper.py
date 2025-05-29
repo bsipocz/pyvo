@@ -79,12 +79,7 @@ def test_field_extraction():
     builder = HeaderMapper(votable)
     mapping, error_mapping = builder.extract_epochposition_mapping()
     assert mapping == {"obsDate": {"dateTime": "ObsDate",
-                                    "representation": "iso"},
-                        "longitude": "RAB1950",
-                        "latitude": "DEB1950"
-                     }
-
-
-if __name__ == "__main__":
-    test_all()
-    test_field_extraction()
+                                   "representation": "iso"},
+                       "longitude": "RAB1950",
+                       "latitude": "DEB1950"
+                       }
